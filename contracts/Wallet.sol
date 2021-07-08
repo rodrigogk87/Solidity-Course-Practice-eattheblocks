@@ -13,6 +13,12 @@ contract Wallet{
     Transfer[] public transfers;
     mapping(address => mapping(uint=>bool)) public approvals;
      
+    constructor(address[] memory _approvers, uint _quorum) {
+        approvers = _approvers;
+        quorum = _quorum;
+    }
+    
+
     function getApprovers() external view returns(address[] memory){
          return approvers;
      }

@@ -1,4 +1,6 @@
 const path = require('path');
+const provider = require('@truffle/hdwallet-provider');
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,

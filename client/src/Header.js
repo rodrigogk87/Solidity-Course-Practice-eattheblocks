@@ -4,7 +4,11 @@ function Header ({approvers,quorum}){
     return (
         <header>
             <ul>
-                <li>Approvers: { approvers.join(', ') }</li>
+                <li>Approvers</li>
+
+                {approvers.map((approvers) => (
+                    <li> { approvers }</li>
+                ))}
                 <li>Quorum: { quorum }</li>
             </ul>
         </header>

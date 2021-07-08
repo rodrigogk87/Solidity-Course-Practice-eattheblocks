@@ -65,8 +65,11 @@ function App() {
   return (
     <div className="App">
        Multisig Wallet - Balance: { balance }
+       <hr></hr>
        <Header approvers={approvers} quorum={quorum} />
+       <hr></hr>
        <NewTransfer createTransfer={createTransfer} />
+       <hr></hr>
        <TransferList transfers={transfers}  approveTransfer={approveTransfer}/>
     </div>
   );
